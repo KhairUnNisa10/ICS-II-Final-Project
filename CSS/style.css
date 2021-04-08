@@ -402,3 +402,30 @@ header nav ul li:nth-child(3) a:hover{
 		font-family: 'Lato', sans-serif;
 		text-shadow: 1px 1px 1px #ccc;
 	}
+
+.tech {
+	margin-top: 50px;
+}
+
+.tech, .box{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+	flex-direction: column;
+}
+
+.tech p{
+	margin: 0;
+}
+
+.tech i{
+	font-size: 60px;
+	color: #580f68;
+}
+
+.tech .box{
+	margin: 0 30px;
+}
