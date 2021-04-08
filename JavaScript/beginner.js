@@ -36,39 +36,39 @@ const quizQues = [
 		ans: "ans1"
 	},
 	{
-		question: "Q6:  What is the output of the following code? \nstr = 'pynative' \nprint (str[1:3])",
-		a: "py",
-		b: "pyn",
-		c: "yn",
-		ans: "ans3"
-	},
-	{
-		question: "Q7:  What is the output of the following code? \nvalueOne = 5 ** 2\n valueTwo = 5 ** 3\n print(valueOne)\nprint(valueTwo)",
-		a: "10 15",
-		b: "25 125",
-		c: "Error: invalid syntax",
+		question: "Q6:  What is the correct syntax to output 'Hello World' in Python?",
+		a: "p('Hello world')",
+		b: "print('Hello world')",
+		c: "echo'Hello world'",
 		ans: "ans2"
 	},
 	{
-		question: "Q8: What is the output of the following code?\n var1 = 1\n var2 = 2\n var3 = '3'\n print(var1 + var2 + var3)",
-		a: "6",
-		b: "123",
-		c: "Error. Mixing operators between numbers and strings are not supported",
-		ans: "ans3"
-	},
-	{
-		question: "Q9: What is the Output of the following code?\n for x in range(0.5, 5.5, 0.5):\n print(x)",
-		a: "[0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5]",
-		b: "[0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5]",
-		c: "The Program executed with errors",
+		question: "Q7: How do you insert inline comments in python code?",
+		a: "//this is a comment",
+		b: "# this is a comment",
+		c: "/*this is a comment*/",
 		ans: "ans2"
 	},
 	{
-		question: "Q10: What is the output of the following code? \nfor i in range(10, 15, 1):\n print( i, end=', ')",
-		a: "10, 11, 12, 13, 14",
-		b: "10, 11, 12, 13, 14, 15",
-		c: "10,12,14",
-		ans: "ans1"
+		question: "Q8: How do you create a variable with the numeric value 5?",
+		a: "x = int 5",
+		b: "x = 5",
+		c: "Both are correct",
+		ans: "ans3"
+	},
+	{
+		question: "Q9: What is the correct syntax to output the type of a variable or object in python?",
+		a: "print(typeofx)",
+		b: "print(type(x))",
+		c: "print(typeOf(x))",
+		ans: "ans2"
+	},
+	{
+		question: "Q10: What is the correct way to create a function in python",
+		a: "create myfunction():",
+		b: "Function myfunction():",
+		c: "def myFunction():",
+		ans: "ans3"
 	}
 ];
 
@@ -136,6 +136,7 @@ submit.addEventListener('click', () => {
 		loadQuestion();
 	}else{
 		//Displaying the Scoreboard
+		
 		showScore.innerHTML = `
 			<img src="icon.png" alt="Prize Icon" height="50px" />
 			<h3>You scored ${score}/${quizQues.length}</h3>
@@ -143,5 +144,12 @@ submit.addEventListener('click', () => {
 		`;
 
 		showScore.classList.remove('score-area');
+		document.getElementById("score-container").style.background = "#580f68";
+		document.getElementById("score-container").style.paddingTop = "40px";
+		document.getElementById("score-container").style.paddingBottom = "40px";
+		document.getElementById("score-container").style.paddingRight = "80px";
+		document.getElementById("score-container").style.paddingLeft = "80px";
+		document.getElementById("score-container").style.marginTop = "30px";
+		document.getElementById("hide").style.display = "none";
 	}
 });

@@ -1,28 +1,28 @@
 //JSON For Questions
 const quizQues = [
 	{
-		question: "Q1: In regards to separated value files such as .csv and .tsv, what is the delimiter?",
-		a: "Any character such as the comma (,) or tab that is used to separate the row data",
-		b: "Delimiters are not used in separated value files",
-		c: "Any character such as the comma (,) or tab that is used to separate the column data.",
-		d: "Anywhere the comma (,) character is used in the file",
-		ans: "ans3",
+		question: "Q1: Select which is True for python function",
+		a: "A function only executes when it is called",
+		b: "A function can take an unlimited number of arguments",
+		c: "A python function can return multiple values",
+		d: "All the above options are correct",
+		ans: "ans4",
 	},
 
 	{
-		question: "Q2: Assume you have a file object my_data which has properly opened a separated value file that uses the tab character as the delimiter.\nWhat is the proper way to open the file using the Python csv module and assign it to the variable csv_reader?\nAssume that csv has already been imported.",
-		a: "csv_reader = csv.reader(my_data, tab_delimited=True)",
-		b: "csv_reader = csv.reader(my_data)",
-		c: "csv_reader = csv.reader(my_data, delimiter='\t')",
-		d: "csv_reader = csv.tab_reader(my_data)",
-		ans: "ans3"
+		question: "Q2: PEP is",
+		a: "the set of rules that specify how to format python code for maximum readability",
+		b: "readability does not matter",
+		c: "a method",
+		d: "None of these",
+		ans: "ans1"
 	},
 	{
-		question: "Q3: How many CPUs (or cores) will the Python threading library take advantage of simultaneously?",
-		a: "All of the available CPU",
-		b: "None",
-		c: "Two",
-		d: "One",
+		question: "Q3: What is the maximum possible length of an identifier?",
+		a: "31 character",
+		b: "63 character",
+		c: "79 character",
+		d: "None of the above",
 		ans: "ans4"
 	},
 	{
@@ -42,12 +42,12 @@ const quizQues = [
 		ans: "ans2"
 	},
 	{
-		question: "Q6: Which of the following HTTP requests are correct?\n HTTP bin is a simple HTTP request and response service. Assume that you won’t have any errors dealing with it.",
-		a: "requests.put('https://httpbin.org/put', data={'key':'value'})",
-		b: "requests.post('https://httpbin.org/post', data={'key':'value'})",
-		c: "requests.delete('https://httpbin.org/delete')",
-		d: "requests.tail('https://httpbin.org/tail')",
-		ans: "ans3"
+		question: "Q6: What are the generators in python?",
+		a: "Functions that return an iterable set of items are called generators",
+		b: "Functions in which variables are already assigned",
+		c: "Functions that generates its own argument",
+		d: "None of these",
+		ans: "ans1"
 	},
 	{
 		question: "Q7: Which one is not data structure",
@@ -58,23 +58,23 @@ const quizQues = [
 		ans: "ans4"
 	},
 	{
-		question: "Q8: What will be the output of the following code?\ndef total(initial = 5, *num, **key):\n count = initialfor n in num: \n      count+=n \nfor k in key:\n      count+=key[k]\n   return count\nprint(total(100,2,3, clouds=50, stars=100))",
-		a: "260",
-		b: "160",
-		c: "155",
-		d: "255",
-		ans:"ans4"
+		question: "Q8: the dir() function is used to",
+		a: "display the defined symbols",
+		b: "display the documentation string",
+		c: "delete current iteration",
+		d: "None of these",
+		ans:"ans1"
 	},
 	{
-		question: "Q9: Discuss the outcome of the code?\ndef func1(n):	  if(n==0):\n    return 0\n   else:\n     return(n+func1(n-1))\ndef func2(n, result):\n   if(n==0):\n     return(result)\n   else:     return(func2(n-1, n+result))\n  print(func1(4))\nprint(func2(4,0))",
-		a: "Func1 is tail recursion.",
-		b: "Func1 and Func2 are tail recursions.",
-		c: "Func2 is only tail recursion.",
-		d: "Neither Func2 nor Func1 is tail recursion",
-		ans: "ans2"
+		question: "Q9: python packages are:",
+		a: "namespaces containing multiple modules",
+		b: "naming convention",
+		c: "signifies the variable type",
+		d: "all of them",
+		ans: "ans1"
 	},
 	{
-		question: "Q10: . Pylab is a package that combines _______,________&______ into a single namespace.",
+		question: "Q10: Pylab is a package that combines __ , __ & __ into a single namespace.",
 		a: "Numpy, scipy & matplotlib",
 		b: "Numpy, matplotlib & pandas",
 		c: "Numpy, pandas & matplotlib",
@@ -154,5 +154,12 @@ submit.addEventListener('click', () => {
 		`;
 
 		showScore.classList.remove('score-area');
+		document.getElementById("score-container").style.background = "#580f68";
+		document.getElementById("score-container").style.paddingTop = "40px";
+		document.getElementById("score-container").style.paddingBottom = "40px";
+		document.getElementById("score-container").style.paddingRight = "80px";
+		document.getElementById("score-container").style.paddingLeft = "80px";
+		document.getElementById("score-container").style.marginTop = "30px";
+		document.getElementById("hide").style.display = "none";
 	}
 });

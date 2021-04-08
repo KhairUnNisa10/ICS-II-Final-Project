@@ -1,12 +1,110 @@
 body{
   /*background-color:#F8F8F8;*/
   margin: 0;
-  
+  background-image: linear-gradient(to right, #580F68, #CA9DD4);
+}
+/*Navigation*/
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 100px;
+  border-bottom: 2px solid #580f68;
+  padding-bottom: 10px;
+}
+
+header nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  margin: 0 15px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #580F68;
+}
+
+header nav ul li:nth-child(3) a{
+  border: 2px solid #580F68;
+  border-radius: 10px;
+  padding: 6px 50px !important;
+  margin-left: 20px !important;
+  transition: 0.5s;
+  margin-right: 0;
+}
+
+header nav ul li:nth-child(3) a:hover{
+  background: #580F68;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+header .logo a{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .logo .name .webn{
+  font-family: 'LATO';
+    color: #580f68;
+    font-size: 25px;
+    /*font-style: oblique;*/
+}
+
+header .logo .name .webn .bold1{
+    margin: 0 2px;
+    animation-name: bold;
+    animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-play-state: running;
+}
+
+header .logo .name .webn .bold2{
+
+    animation-name: bolds;
+    animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-play-state: running;
+}
+
+header .logo a{
+  text-decoration: none;
+}
+
+@keyframes bold{
+  from{
+    font-weight: 400;
+  }
+  to{
+    font-weight: 900;
+    color: #8e529b;
+  }
+}
+
+@keyframes bolds{
+  from{
+    font-weight: 900;
+    color: #8e529b;
+  }
+  to{
+    font-weight: 400;
+  }
 }
 
 .start-page{
   background-image: linear-gradient(to right, #580F68, #CA9DD4);
-  height: 100vh;
+  /*height: 100vh;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -19,6 +117,7 @@ body{
   width: 20%;
   transition: transform .2s; 
   margin:10px;
+  background-color: #ffffff;
 }
 
 .card:hover {
@@ -26,9 +125,10 @@ body{
   transform: scale(1.1);
 }
 
-.container {
+.content {
   padding: 2px 14px !important;
-  margin-top:10px;
+  /*margin-top:10px;*/
+  background-color: #ffffff ;
 }
 
 p{
@@ -106,6 +206,7 @@ p{
   font-weight:bold;
   font-size: 35px;
   font-family: 'Satisfy', cursive;
+  margin: 15px 0;
 }
 
 @keyframes moveInleft {
@@ -223,6 +324,7 @@ p{
   font-family: 'Satisfy', cursive;
   font-size: 60px;
   color: #580F68;
+  text-shadow: 2px 2px #ccc;
 }
 
 .about{

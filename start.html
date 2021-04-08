@@ -1,91 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="CSS/start-page.css">
+  <title>Start - Level</title>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Start - Level</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
-</head>
+  <link rel="stylesheet" href="CSS/start-page.css"> 
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
+  </head>
+  <body>
+    
+    <div class="main-container">
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <div class="img">
+              <img src="icon.png" alt="Logo" width="60px;">
+            </div>
+            <div class="name">
+              <span class="webn"><span class="bold1">Q</span><span class="bold2">U</span><span class="bold1">I</span><span class="bold2">Z</span></span>
+            </div>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="start.html">Play</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="start-page">
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/ed/c4/55/edc4550ad72d87e83e765ad10849b511.jpg" alt="Avatar" style="width:100%">
+          
+          <div class="content">
+            <div class="level">
+              <div class="head1">
+                <h2>Beginner</h2>
+              </div>
+            </div>
 
-<body>
-  <div class="start-page">
-    <div class="card">
-      <img src="https://i.pinimg.com/originals/ed/c4/55/edc4550ad72d87e83e765ad10849b511.jpg" alt="Avatar" style="width:100%">
-      
-      <div class="container">
-        <div class="level">
-          <div class="head1">
-            <h2>Beginner</h2>
+            <div class="text">
+              <p>Test your skill as a python beginner. This difficulty level will help you improve and strengthen your python basics.</p>
+            </div>
+            
+            <div class="bb">
+              <button onclick="location.href = 'quizEasy.html';" class="button" style="vertical-align:middle">
+                <span>Start </span>
+              </button>
+            </div>
+
           </div>
         </div>
 
-        <div class="text">
-          <p>Test your skill as a python beginner. This difficulty level will help you improve and strengthen your python basics.</p>
-        </div>
-        
-        <div class="bb">
-          <button onclick="location.href = 'quizEasy.html';" class="button" style="vertical-align:middle">
-            <span>Start </span>
-          </button>
-        </div>
+        <div class="card">
+          <img src="https://pbs.twimg.com/media/Dyu1TtRXQAE_PM7.jpg:large" alt="Avatar" style="width:100%">
 
-      </div>
-    </div>
+          <div class="content">
+            <div class="level">
+              <div class="head1">
+                <h2>Intermediate</h2>
+              </div>
+            </div>
 
-    <div class="card">
-      <img src="https://pbs.twimg.com/media/Dyu1TtRXQAE_PM7.jpg:large" alt="Avatar" style="width:100%">
+            <div class="text">
+              <p>This difficulty is for normal level python coders. This quiz will help them improve and strengthen their python basics on a higher level.</p>
+            </div>
 
-      <div class="container">
-        <div class="level">
-          <div class="head1">
-            <h2>Intermediate</h2>
+            <div class="bb">
+              <button onclick="location.href = 'quizInter.html';" class="button" style="vertical-align:middle">
+                <span>Start </span>
+              </button>
+            </div>
+
           </div>
         </div>
 
-        <div class="text">
-          <p>This difficulty is for normal level python coders. This quiz will help them improve and strengthen their python basics on a higher level.</p>
-        </div>
+        <div class="card">
+          <img src="https://www.itl.cat/pngfile/big/112-1121438_three-ways-of-storing-and-accessing-lots-of.jpg" alt="Avatar" style="width:100%">
 
-        <div class="bb">
-          <button onclick="location.href = 'quizInter.html';" class="button" style="vertical-align:middle">
-            <span>Start </span>
-          </button>
-        </div>
+          <div class="content">
+            <div class="level">
+              <div class="head1">
+                <h2>Expert</h2>
+              </div>
+            </div>
 
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://www.itl.cat/pngfile/big/112-1121438_three-ways-of-storing-and-accessing-lots-of.jpg" alt="Avatar" style="width:100%">
-
-      <div class="container">
-        <div class="level">
-          <div class="head1">
-            <h2>Expert</h2>
+            <div class="text">
+              <p>Expert level will help determine your skill as a master level coder. Take this quiz and test your knowledge on much higher skill.</p>
+            </div>
+            <div class="bb">
+              <button onclick="location.href = 'quizExpert.html';" class="button" style="vertical-align:middle">
+                <span>Start </span>
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="text">
-          <p>The expert level will help determine your skill as a master level coder. Take this quiz and test your knowledge on much higher skill.</p>
+          
+
         </div>
       </div>
-
-      <div class="bb">
-        <button onclick="location.href = 'quizExpert.html';" class="button" style="vertical-align:middle">
-          <span>Start </span>
-        </button>
-      </div>
-
     </div>
-  </div>
-
-</body>
-</html>
+  </body>
+  </html>

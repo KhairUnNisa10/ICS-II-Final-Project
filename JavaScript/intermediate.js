@@ -43,18 +43,18 @@ const quizQues = [
 		ans: "ans1"
 	},
 	{
-		question: "Q7: What is the Output of the following code.\n a = 'John' \nb = '8'\n Print (a+b)",
-		a: "John 8",
-		b: "Error",
-		c: "John + 8",
-		ans: "ans1"
+		question: "Q7: What is the correct syntax to return the first character in a string?",
+		a: "x = sub('hello', 0, 1)",
+		b: "x = 'hello'.sub(0,1)",
+		c: "x = 'hello[0]",
+		ans: "ans3"
 	},
 	{
-		question: "Q8: In the Python statement x = a + 5 - b: \na and b are ___\n a + 5 - b is ___ ",
-		a: "operands, an equation",
-		b: "operators, a statement",
-		c: "operands, an expression",
-		ans: "ans3"
+		question: "Q8: Which method can be used to replace parts of a string?",
+		a: "switch()",
+		b: "replace()",
+		c: "replacestring()",
+		ans: "ans2"
 	},
 	{
 		question: "Q9: What is the value of the expression 100/ 25?",
@@ -64,7 +64,7 @@ const quizQues = [
 		ans: "ans2"
 	},
 	{
-		question: "Q10: Is it safe to directly use the == operator to determine whether objects of type float are equal?",
+		question: "Q10: Is it safe to directly use the == to determine whether objects of type float are equal?",
 		a: "Sure! Go for it.",
 		b: "Incorrect",
 		c: "Nope, not a good idea.",
@@ -143,5 +143,12 @@ submit.addEventListener('click', () => {
 		`;
 
 		showScore.classList.remove('score-area');
+		document.getElementById("score-container").style.background = "#580f68";
+		document.getElementById("score-container").style.paddingTop = "40px";
+		document.getElementById("score-container").style.paddingBottom = "40px";
+		document.getElementById("score-container").style.paddingRight = "80px";
+		document.getElementById("score-container").style.paddingLeft = "80px";
+		document.getElementById("score-container").style.marginTop = "30px";
+		document.getElementById("hide").style.display = "none";
 	}
 });
