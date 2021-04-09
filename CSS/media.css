@@ -1,0 +1,36 @@
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    
+    /*Start - Levels Page*/
+    .start-page{
+    	flex-direction: column;
+    	padding-bottom: 50px;
+    }
+
+    .start-page .card{
+      width: 70%;
+    }
+
+    header nav {
+    	display: none;
+    }
+
+    header{
+   		margin: 20px 70px;
+    }
+
+    .main1{
+        flex-direction: column;
+    }
+    .about, .meetTeam {
+        padding: 0 50px 50px;
+    }
+
+    .tech{
+        flex-direction: column;
+    }
+
+    .box{
+        /*margin-bottom: 20px;*/
+        margin: 0 0 20px;
+    }
+}

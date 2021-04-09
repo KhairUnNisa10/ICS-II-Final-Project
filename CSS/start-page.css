@@ -294,6 +294,7 @@ p{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
+  flex-direction: row;
   padding:10px;
 }
 
@@ -336,3 +337,18 @@ p{
   font-size: 60px;
   color: #580F68;
 }*/
+
+.hamburger{
+  display: none;
+  font-size: 30px;
+    color: #595a5d;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+
+  .hamburger{
+      display: block;
+    }
+}
+/*Responsive Web Design*/
+  
