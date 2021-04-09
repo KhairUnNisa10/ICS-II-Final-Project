@@ -5,7 +5,7 @@ const quizQues = [
 		a: "'''",
 		b: '"""',
 		c: "a and b both",
-		ans: "ans1"
+		ans: "ans3"
 	},
 	{
 		question: "Q2: What is the correct file extension for Python files?",
@@ -46,7 +46,7 @@ const quizQues = [
 		question: "Q7: What is the correct syntax to return the first character in a string?",
 		a: "x = sub('hello', 0, 1)",
 		b: "x = 'hello'.sub(0,1)",
-		c: "x = 'hello[0]",
+		c: "x = 'hello'[0]",
 		ans: "ans3"
 	},
 	{
